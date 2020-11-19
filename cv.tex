@@ -1,0 +1,116 @@
+\documentclass{CV}
+
+\setname{Bruno}{Rodrigues}
+\setaddress{São Paulo, Brazil}
+\setmobile{+55 (11) 9 9549-0767}
+\setmail{rodriguessilvabruno@outlook.com}
+\setposition{Data Scientist} %ignored for now
+\setlinkedinaccount{https://www.linkedin.com/in/brunorosilva/} %you can play with color of the template (red is also nice..)
+\setgithubaccount{https://github.com/brunorosilva} %you can play with color of the template (red is also nice..)
+\setmediumaccount{https://medium.com/@brunorosilva}
+\setthemecolor{gray} %you can play with color of the template (red is also nice..)
+
+\begin{document}
+%Set variables
+%You can add sections, texts, explanations just by copying the style below. Replace the dummy texts "\lipsum[1][x-x]\par" with actual texts.
+%Create header
+\headerview
+\vspace{.5ex}
+%Sections
+%
+% Summary
+\addblocktext{Summary}{
+Data Scientist urging to find the best solutions to complex problems using data and freeing
+people to push themselves into more deep, human tasks with Machine Learning and Artificial Intelligence.
+}
+%
+%Education
+\section{Education} 
+    \datedexperience{USP - Escola Politécnica}{01/2020 - 12/2021} 
+    \explanation{Specialization in Artificial Intelligence} 
+     \explanationdetail{ 
+     2 year especialization in Deep Learning, Machine Learning and Neural Networks \newline
+     GPA 3.92/4.00\newline
+     }
+    \datedexperience{UFABC - Universidade Federal do ABC}{05/2015 - 05/2019} 
+    \explanation{Bachelor's in Science and Technology} 
+    \explanationdetail{ 
+     Award of Merit Physics III, top 4\% out of 1900 in the subject
+
+     }
+%
+% Experience
+\section{Professional Experience}
+    %
+    \datedexperience{Boa Vista Serviços - Brazilian Credit Bureau}{08/2020 - Current} 
+    \explanation{Data Scientist} 
+    \explanationdetail{ 
+     Analytics team, developing models for costumer propensity
+
+     }    
+    %
+    \datedexperience{ArcelorMittal}{05/2019 - 07/2020} 
+    \explanation{Jr. Data Scientist} 
+    \explanationdetail{ 
+     Responsible for the development of several data related projects, such as sales forecasting for more
+than 100 points of sales all over Brazil, costumer churn analysis, demand prediction for factories and
+several other projects dealing directly with directors of Marketing, Supply Chain and other areas. 
+     }     
+    %
+    \datedexperience{ArcelorMittal}{07/2018 - 04/2019} 
+    \explanation{Data Intelligence Developer} 
+    \explanationdetail{ 
+Created a PowerBI Culture that has ~6k accesses/month with several reports and dashboards.
+}     
+    %
+    \datedexperience{ArcelorMittal}{09/2017 - 06/2018} 
+    \explanation{Innovation and Projects in Marketing Intern} 
+
+%
+% Skills
+\section{Skills}
+    %
+    \newcommand{\skillone}{\createskill{Programming Languages}{\textbf{\emph{Experienced:}} \ \  Python \cpshalf SQL \cpshalf R \cpshalf M Query, DAX\ \ \textbf{\emph{Familiar:}} \ \  JS, CSS, HTML \cpshalf Bash }}
+    %
+    \newcommand{\skilltwo}{\createskill{Software Development}{GIT \cpshalf Agile Methodology \cpshalf Kanban \cpshalf CRISP-DM methodology}}
+    %
+    \newcommand{\skillthree}{\createskill{Frameworks \ \& \ Libraries}{
+    
+     TensorFlow \cpshalf Pandas \cpshalf Selenium \cpshalf Streamlit \cpshalf  Scikit-learn \cpshalf openCV \cpshalf Flask  \cpshalf NodeJS}}
+    %
+    \newcommand{\skillfour}{\createskill{BI Tools and Cloud Envs}{Google Cloud Platform \cpshalf Azure \cpshalf Power BI  \cpshalf Excel (VBA, Macros) \cpshalf Bizagi \cpshalf Draw.io }}
+    %
+    \newcommand{\skillfive}{\createskill{Languages}{\textbf{\emph{Native:}} \ \  Portuguese \ \ \textbf{\emph{Fluent:}} \ \ English \ \ \textbf{\emph{Intermediary:}} Spanish \ \textbf{\emph{Beginner:}} \ \ German }}
+    %
+    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive}
+%
+% Experience
+\section{Extra}
+    \newcommand{\extraone}{%
+    Deep Learning Specialization (16 weeks) - Deepmind.ai %replace this part with actual text
+    }
+    %
+    \newcommand{\extratwo}{%
+   Tensorflow Developer Specialization (16 weeks) - Deepmind.ai %replace this part with actual text
+    }
+    %
+    \newcommand{\extrathree}{%
+    Machine Learning with Tensorflow in Google Cloud Platform  (16 weeks) - Deepmind.ai %replace this part with actual text
+    }
+    \newcommand{\extrafive}{%
+Volunteered in Buenos Aires, Argentina: taking care of children who lived in a orphanage in the suburbs, AIESEC    }
+    \newcommand{\extraseven}{%
+Coursera (16) Machine Learning, Andew Ng and other 15 courses in the specializations    }
+    \newcommand{\extraeigth}{%
+edX (2) Deep Learning Fundamentals with Keras; Analyzing and Visualizing with PowerBI     }
+    \newcommand{\extranine}{%
+HarvardX (3) Data Science: Productivity Tools; Visualization; Machine Learning    }
+    \newcommand{\extraten}{%
+Udacity (2) Time Series Forecasting; Programming Foundations with Python     }
+    %
+    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree,  \extrafive, \extraseven, \extraeigth, \extranine, \extraten}
+    %
+    \createbullets{\listofextras}
+%
+%Footnote
+\end{document}
