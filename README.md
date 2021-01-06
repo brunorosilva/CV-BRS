@@ -3,7 +3,7 @@
 This is my official CV. <br>
 It's based on the template available on Overleaf created by Murat Can Karacabey.
 
-You may copy it, if you want to using git
+You may copy it, if you wish to, using git
 
 ---
 On Windows
