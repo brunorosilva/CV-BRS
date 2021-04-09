@@ -13,7 +13,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{tikz}
 \RequirePackage{fontspec}
-\RequirePackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.3in]{geometry} % Document margins
+\RequirePackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.3in]{geometry} % Document margins
 \RequirePackage{hyperref}
 \RequirePackage{fontawesome}
 \RequirePackage{mfirstuc}
@@ -146,7 +146,7 @@ Position: & \@claimedposition \\
 }
 
 \newcommand{\explanation}[1]{%
-    \mbox { \scshape \hspace{1.2em} \footnotesize #1}\\[0.05cm]
+    \mbox { \scshape \hspace{1.1em} \footnotesize #1}\\[0.05cm]
 }
 
 \newcommand{\explanationdetail}[1]{%
@@ -159,7 +159,7 @@ Position: & \@claimedposition \\
 
 \newcommand{\addblocktext}[2]{%
   \section{#1} 
-  \indent \explanationdetail{\hspace{4ex} #2}
+  \indent \explanationdetail{\hspace{3ex} #2}
 }
 
 \newcommand\createskill[2]{%
@@ -197,5 +197,5 @@ Position: & \@claimedposition \\
 
 \newcommand\createfootnote{%
   \renewcommand{\footnotesize}{\fontsize{7pt}{11pt}\selectfont}
-    \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
+    \renewcommand\footnoterule{\rule{0.3\linewidth}{0.3pt}}
     \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/muratcankaracabey/latex_cv}{source code}}}
