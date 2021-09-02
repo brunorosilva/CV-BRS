@@ -13,7 +13,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{tikz}
 \RequirePackage{fontspec}
-\RequirePackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.3in]{geometry} % Document margins
+\RequirePackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.2in]{geometry} % Document margins
 \RequirePackage{hyperref}
 \RequirePackage{fontawesome}
 \RequirePackage{mfirstuc}
