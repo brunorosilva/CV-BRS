@@ -13,7 +13,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{tikz}
 \RequirePackage{fontspec}
-\RequirePackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.2in]{geometry} % Document margins
+\RequirePackage[left=0.55in,top=0.1in,right=0.55in,bottom=.01in]{geometry} % Document margins
 \RequirePackage{hyperref}
 \RequirePackage{fontawesome}
 \RequirePackage{mfirstuc}
@@ -21,7 +21,7 @@
 \RequirePackage{lipsum}
 \RequirePackage{array}
 \pagestyle{empty}
-
+\usepackage{enumitem}
 %Setup
 
 \newcommand*{\setname}[2]{\def\@firstname{#1}\def\@lastname{#2}}
@@ -32,6 +32,7 @@
 \newcommand*{\setthemecolor}[1]{\def\@themecolor{#1}}
 \newcommand*{\setlinkedinaccount}[1]{\def\@linkedinaccount{#1}}
 \newcommand*{\setmediumaccount}[1]{\def\@mediumaccount{#1}}
+\newcommand*{\setexternallink}[1]{\def\@externallink{#1}}
 \newcommand*{\setgithubaccount}[1]{\def\@githubaccount{#1}}
 
 %Setup for coverletter
@@ -80,6 +81,8 @@
 \newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
 \newcommand{\mediumview}{\href{\@mediumaccount}{\faMedium\ \footnotesize medium}}
 
+\newcommand{\portfolioview}{\href{\@externallink}{\faExternalLink\ \footnotesize portfolio}}
+
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 
 \newcommand{\name}{%
@@ -89,7 +92,7 @@
 \newcommand{\contact}{%
         {\small \@address  \cps \@mobile \\ \@mail%
         \\%
-        \linkedinview \cps \githubview \cps \mediumview \\ 
+        \linkedinview \cps \githubview \cps \mediumview \cps \portfolioview
         } % 
 }
 
@@ -150,7 +153,7 @@ Position: & \@claimedposition \\
 }
 
 \newcommand{\explanationdetail}[1]{%
-    \indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
+    \indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.05cm]
 }
 
 \newcommand{\itemwithtext}[1]{%
@@ -180,7 +183,7 @@ Position: & \@claimedposition \\
 \explanationdetail{
   \begin{tabular}{rl}
     \makeatletter
-    \@for\thisitem:=#1\do{\thisitem\\[0.1cm]}
+    \@for\thisitem:=#1\do{\thisitem\\[0.05cm]}
     \makeatother
     \end{tabular}
 }

@@ -1,6 +1,6 @@
 \documentclass{CV}
 
-\setname{Bruno}{Rodrigues}
+\setname{Bruno}{Chicelli}
 \setaddress{São Paulo, Brazil}
 \setmobile{+55 (11) 9 9549-0767}
 \setmail{rodriguessilvabruno@outlook.com}
@@ -8,6 +8,8 @@
 \setlinkedinaccount{https://www.linkedin.com/in/brunorosilva/} %you can play with color of the template (red is also nice..)
 \setgithubaccount{https://github.com/brunorosilva} %you can play with color of the template (red is also nice..)
 \setmediumaccount{https://medium.com/@brunorosilva}
+\setexternallink{https://rosilva.carrd.co/}
+
 \setthemecolor{gray} %you can play with color of the template (red is also nice..)
 
 \begin{document}
@@ -19,55 +21,59 @@
 %
 % Summary
 \addblocktext{Summary}{
-Data Scientist urging to find the best solutions to complex problems using data and freeing
-people to push themselves into more deep, human tasks with Machine Learning and Artificial Intelligence.
+Data Scientist and MSc. Student passionate about finding great solutions to complex problems using data, Machine Learning and Artificial Intelligence.
 }
 %
 %Education
 \section{Education}
-    \datedexperience{USP - Escola Politécnica}{01/2021 - 12/2022} 
-    \explanation{Masters of Science in Mechatronics Engineering} 
+    \datedexperience{USP - Polytechnic School of the University of São Paulo}{01/2021 - 12/2022} 
+    \explanation{Master of Science in Mechatronics Engineering} 
     \explanationdetail{ 
-    Thesis focused on Deep Reinforcement Learning usage for traffic control}
-    \datedexperience{USP - Escola Politécnica}{01/2020 - 12/2021} 
-    \explanation{Artificial Intelligence} 
+    Dissertation on Deep Reinforcement Learning for traffic control in large and complex environments}
+    \datedexperience{USP - Polytechnic School of the University of São Paulo}{01/2020 - 12/2021} 
+    \explanation{Artificial Intelligence Specialization} 
     \explanationdetail{ 
-     2 year graduate studies in Machine Learning and Deep Learning
-     
-     Final paper on Computer Vision for vehicle counting
-     \newline
-     }
-    \datedexperience{UFABC - Universidade Federal do ABC}{05/2015 - 05/2019} 
+     2 year graduate studies in Machine Learning and Deep Learning - final paper on Computer Vision for vehicle counting
+    }
+    \datedexperience{UFABC - Federal University of ABC}{05/2015 - 05/2019} 
     \explanation{Bachelors in Science and Technology} 
     \explanationdetail{ 
-     Award of Merit Physics III, top 4\% out of 1900 in the subject
+     Award of Merit in Physics III, top 75 student out of 1900 in the course - selected to teach other students
      }
 %
+\setlist[itemize]{leftmargin=*}
+
 % Experience
 \section{Professional Experience}
-    %
+%
     \datedexperience{Globo Group}{06/2021 - Current} 
-    \explanation{Senior Data Scientist} 
+    \explanation{Senior Data Scientist - AdTech Squad - Big Data and Artificial Intelligence} 
     \explanationdetail{ 
-    Globo Group is the second largest television conglomerate in the world
-    
-    AdTech Squad - Big Data and Artificial Intelligence
-     }    
+\begin{itemize}
+  \item Created an automated intelligent mid-roll ad placement pipeline optimized for UX on thousands of daily videos using PyTorch, TensorFlow, Python, Docker, AWS, GCP and other tools;
+\item Created an internal docs synchronization tool for several platforms at once using Go, Python and Tsuru;
+\item Led several projects including inventory optimization and forecast, pricing optimization, sales forecast.
+    \end{itemize}
+}
     \datedexperience{Boa Vista Serviços - Brazilian Credit Bureau}{08/2020 - 06/2021} 
-    \explanation{Data Scientist} 
+    \explanation{Data Scientist - Advanced Analytics Squad - Data Science Department} 
     \explanationdetail{ 
-    Advanced Analytics Team - Data Science Department
-    
-Responsible for innovations in modeling processes - such as Deep Learning - and workflow automations, aiming to improve the impact, productivity and to empower other data scientists in the Data Science Department
-
+\begin{itemize}
+    \item Developed a fast modelling tool to reduce Data Scientists overhead using LGBM, XGBoost and CatBoost;
+    \item Created a model for propensity of credit card acceptance and activation;
+\end{itemize}
      }    
     %
     \datedexperience{ArcelorMittal}{05/2019 - 07/2020} 
-    \explanation{Jr. Data Scientist} 
+    \explanation{Junior Data Scientist - Innovation in Marketing Squad} 
     \explanationdetail{ 
-     Responsible for the development of several data related projects, such as sales forecasting for more
-than 100 points of sales all over Brazil, costumer churn analysis, demand prediction for factories and
-several other projects dealing directly with directors of Marketing, Supply Chain and other areas. 
+    
+    \begin{itemize}
+\item Saved ~1.3M BRL per year with automation and data science using Machine Learning, Python, R, Azure, SQL;
+\item Created a sales forecasting project for over 100 points of sale all over Brazil. Worked on Customer Churn modelling and Demand of production prediction for factories;
+\item Created a PowerBI culture with 7k+ monthly views;
+
+    \end{itemize}
      }     
     %
     %
@@ -76,17 +82,17 @@ several other projects dealing directly with directors of Marketing, Supply Chai
 % Skills
 \section{Skills}
     %
-    \newcommand{\skillone}{\createskill{Programming Languages}{\textbf{\emph{Experienced:}} \ \  Python\cpshalf SQL\cpshalf R\cpshalf M, DAX\ \ \textbf{\emph{Familiar:}} \ \  JS, CSS, HTML\cpshalf Bash\cpshalf C++\cpshalf Clojure}}
+    \newcommand{\skillone}{\createskill{Programming}{\textbf{\emph{Experienced:}} \ \  Python\cpshalf SQL\cpshalf R\ \ \textbf{\emph{Familiar:}} \ \  JS, CSS, HTML\cpshalf Bash\cpshalf NodeJS\cpshalf C++}}
     %
     \newcommand{\skilltwo}{\createskill{Software Development}{GIT \cpshalf Agile Methodology \cpshalf Kanban \cpshalf CRISP-DM methodology}}
     %
     \newcommand{\skillthree}{\createskill{Frameworks \ \& \ Libraries}{
     
-     TensorFlow \cpshalf Pandas \cpshalf Selenium \cpshalf Streamlit \cpshalf  Scikit-learn \cpshalf openCV \cpshalf MLFlow  \cpshalf NodeJS}}
+     TensorFlow \cpshalf PyTorch \cpshalf Pandas \cpshalf Selenium \cpshalf Streamlit \cpshalf openCV \cpshalf MLFlow  \cpshalf NodeJS}}
     %
-    \newcommand{\skillfour}{\createskill{BI Tools and Cloud Envs}{Google Cloud Platform \cpshalf Azure \cpshalf Power BI  \cpshalf Excel (VBA, Macros) \cpshalf Bizagi \cpshalf Draw.io }}
+    \newcommand{\skillfour}{\createskill{BI Tools and Cloud Envs}{Google Cloud Platform\cpshalf Azure\cpshalf AWS\cpshalf Power BI (M, DAX)\cpshalf Data Studio\cpshalf Excel (VBA, Macros)}}
     %
-    \newcommand{\skillfive}{\createskill{Languages}{\textbf{\emph{Native:}} \ \  Portuguese \ \ \textbf{\emph{Fluent:}} \ \ English \ \ \textbf{\emph{Intermediary:}} Spanish \ \textbf{\emph{Beginner:}} \ \ German }}
+    \newcommand{\skillfive}{\createskill{Languages}{\textbf{\emph{Native:}} \  Portuguese \ \textbf{\emph{Fluent:}} \ English \ \textbf{\emph{Intermediary:}} \ Spanish \ \textbf{\emph{Beginner:}} \ German }}
     %
     \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive}
 %
@@ -111,13 +117,13 @@ Volunteered in Buenos Aires, Argentina: taking care of children who lived in a o
     \newcommand{\extraseven}{%
 Several Programming Courses (40+ courses) - Certificates on \href{https://www.linkedin.com/in/brunorosilva/}{my linkedin}    }
     \newcommand{\extraeigth}{%
-Coursera (16) Machine Learning, Andew Ng and other 15 courses in the specializations    }
+Coursera (16 courses) Machine Learning, Andew Ng and other 15 courses in the specializations    }
     \newcommand{\extraten}{%
-HarvardX (3) Data Science: Productivity Tools; Visualization; Machine Learning    }
+HarvardX (3 courses) Data Science: Productivity Tools; Visualization; Machine Learning    }
     \newcommand{\extraevelven}{%
-Udacity (2) Time Series Forecasting; Programming Foundations with Python    }
+Udacity (2 courses) Time Series Forecasting; Programming Foundations with Python    }
     \newcommand{\extratwelve}{%
-Alura (13) Courses on Linux, Shell, Docker, Kubernetes and Flutter    }
+Alura (13 courses) Courses on Linux, Shell, Docker, Kubernetes and Flutter    }
     %
     \newcommand{\listofextras}{\extraone, \extratwo, \extrathree,  \extrafive, \extrasix, \extraseven, \extraeigth, \extraten, \extraevelven, \extratwelve}
     %
