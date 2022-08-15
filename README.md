@@ -19,13 +19,13 @@ Now zip the CV-BRS folder and upload it to <a href='https://www.overleaf.com/'>O
 ---
 
 On Linux
-```
-$ git clone https://github.com/brunorosilva/CV-BRS.git
-$ rm CV-BRS/README.md
-$ rm CV-BRS/Bruno_Rodrigues_CV.pdf
-$ rm CV-BRS/images/CV.png
-$ rm -rf CV-BRS/.git
-$ zip -r My-CV.zip CV-BRS
+```bash
+git clone https://github.com/brunorosilva/CV-BRS.git
+rm CV-BRS/README.md
+rm CV-BRS/Bruno_Rodrigues_CV.pdf
+rm CV-BRS/images/CV.png
+rm -rf CV-BRS/.git
+zip -r My-CV.zip CV-BRS
 ```
 Now upload the zip file to <a href='https://www.overleaf.com/'>Overleaf</a>.
 
