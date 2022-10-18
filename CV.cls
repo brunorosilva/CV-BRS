@@ -13,7 +13,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{tikz}
 \RequirePackage{fontspec}
-\RequirePackage[left=0.55in,top=0.1in,right=0.55in,bottom=.01in]{geometry} % Document margins
+\RequirePackage[left=0.55in,top=0.55in,right=0.55in,bottom=.01in]{geometry} % Document margins
 \RequirePackage{hyperref}
 \RequirePackage{fontawesome}
 \RequirePackage{mfirstuc}
@@ -52,15 +52,19 @@
 
 % can makebox also be used?
 \newcommand\headerview{
-\begin{minipage}{0.5\linewidth}
-    \profpic{0.2}{images/prof}
-\end{minipage}% 
-\hfill
-\begin{minipage}{0.5\linewidth}
-    \center \name \\[0.05cm] 
+% \begin{minipage}{0.5\linewidth}
+%     \profpic{0.2}{images/prof}
+% \end{minipage}% 
+% \hfill
+% \noindent\hrulefill\par
+\noindent\makebox[\textwidth][c]{%
+
+\begin{minipage}{1.2\linewidth}
+    %  \hrulefill\par
+    \center \name \\[0.5cm] 
     \contact % address \ mobile \\ mail
 \end{minipage}
-}
+}}
 
 %profilpicture
 
@@ -78,19 +82,19 @@
 %contactsubviews 
     
     
-\newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
-\newcommand{\mediumview}{\href{\@mediumaccount}{\faMedium\ \footnotesize medium}}
+\newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ linkedin}}
+\newcommand{\mediumview}{\href{\@mediumaccount}{\faMedium\  medium}}
 
-\newcommand{\portfolioview}{\href{\@externallink}{\faExternalLink\ \footnotesize portfolio}}
+\newcommand{\portfolioview}{\href{\@externallink}{\faExternalLink\ portfolio}}
 
-\newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
+\newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ github}}
 
 \newcommand{\name}{%
-    {\large \@firstname \ \textsc{\@lastname}}
+    {\huge \@firstname \ \textsc{\@lastname}}
 }
 
 \newcommand{\contact}{%
-        {\small \@address  \cps \@mobile \\ \@mail%
+        { \@address  \cps \@mobile \\ \@mail%
         \\%
         \linkedinview \cps \githubview \cps \mediumview \cps \portfolioview
         } % 
@@ -106,7 +110,7 @@
 }
 
 \newcommand\coverlettersubview{
-\begin{tabular}{>{\scshape \bfseries \color{\@themecolor}}l  >{\small }l}
+\begin{tabular}{>{\scshape \bfseries \color{\@themecolor}}l  >{ }l}
 Company: & \@companyname \\
 Position: & \@claimedposition \\
 \end{tabular}
@@ -199,6 +203,6 @@ Position: & \@claimedposition \\
 }
 
 \newcommand\createfootnote{%
-  \renewcommand{\footnotesize}{\fontsize{7pt}{11pt}\selectfont}
+  \renewcommand{\footnotesize}{\fontsize{10pt}{11pt}\selectfont}
     \renewcommand\footnoterule{\rule{0.3\linewidth}{0.3pt}}
     \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/muratcankaracabey/latex_cv}{source code}}}
