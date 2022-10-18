@@ -6,6 +6,7 @@ It's based on the template available on Overleaf created by Murat Can Karacabey.
 <p align="center">
   <img src='images/CV.png'>
 </p>
+
 ## How to use it
 
 On Windows
