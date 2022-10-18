@@ -2,10 +2,12 @@
 
 This is my official CV. <br>
 It's based on the template available on Overleaf created by Murat Can Karacabey.
+## Preview 
+<p align="center">
+  <img src='images/CV.png'>
+</p>
+## How to use it
 
-You may copy it, if you wish to, using git
-
----
 On Windows
 ```
 git clone https://github.com/brunorosilva/CV-BRS.git
@@ -32,5 +34,3 @@ Now upload the zip file to <a href='https://www.overleaf.com/'>Overleaf</a>.
 ---
 
 It is important that you change the compiler to XeLaTex by going into the project on Overleaf, clicking on menu (top left corner) and selecting XeLaTex as the compiler. 
-## Preview 
-<img src='images/CV.png'>
