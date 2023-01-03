@@ -1,4 +1,4 @@
-# Curriculum Vitae - Bruno Rodrigues Silva
+# Curriculum Vitae - Bruno Rodrigues Silva Chicelli
 
 This is my official CV. <br>
 It's based on the template available on Overleaf created by Murat Can Karacabey.
