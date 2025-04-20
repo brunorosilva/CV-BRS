@@ -4,7 +4,7 @@ This is my official CV. <br>
 It's based on the template available on Overleaf created by Murat Can Karacabey.
 ## Preview 
 <p align="center">
-  <img src='images/CV.png'>
+  <img src='images/Bruno_Rodrigues_CV.png'>
 </p>
 
 ## How to use it

@@ -1,8 +1,7 @@
 \documentclass{CV}
+\usepackage{hyperref}
 
 \setname{Bruno}{Chicelli}
-\setaddress{São Paulo, Brazil}
-\setmobile{+55 (11) 9 9549-0767}
 \setmail{rodriguessilvabruno@outlook.com}
 \setposition{Data Scientist} %ignored for now
 \setlinkedinaccount{https://www.linkedin.com/in/brunorosilva/} %you can play with color of the template (red is also nice..)
@@ -22,56 +21,60 @@
 % Summary
 \addblocktext{Summary}{
 \explanationdetail{
-Python\cpshalf SQL\cpshalf TensorFlow\cpshalf PyTorch\cpshalf OpenCV\cpshalf PySpark\cpshalf Google Cloud Platform\cpshalf Azure\cpshalf Amazon Web Services \\
-Highlight: \href{https://github.com/brunorosilva/plotly-calplot/tree/main}{Calplot}, my dataviz project, got liked and posted by the founder of Plotly and got featured on Plotly's Linkedin\\
-\textbf{\emph{Fluent:}} Portuguese\cpshalf English \cpshalf Spanish \textbf{\emph{Beginner:}} German}}
+Python\cpshalf SQL\cpshalf TensorFlow\cpshalf PyTorch\cpshalf LangChain\cpshalf PySpark\cpshalf Google Cloud Platform\cpshalf Amazon Web Services \\
+\textbf{\emph{Fluent:}} English \cpshalf Portuguese \textbf{\emph{Proficient:}} Spanish \textbf{\emph{Beginner:}} German} \\
+\textbf{Project \href{https://github.com/brunorosilva/img2art-search?tab=readme-ov-file}{Img2Art-Search}}. A Vision transformer model used to search for human art given any image}
     
 %% Experience
 \section{Professional Experience}
 %
-    \datedexperience{Globo Group}{04/2023 - Current} 
-    \explanation{Staff Machine Learning Engineer - Graph Improvement Squad - Data and AI Dept.} 
+    \datedexperience{Handoff - Senior ML/AI Engineer - Austin (Remote)}{03/2025 - Current} 
     \explanationdetail{ 
-    Developing and deploying models and data pipelines to manage behavior graphs at a massive scale, serving a user base exceeding 100 million unique users. Using tech like Vertex AI, DataProc, DataFlow, and BigQuery on large-scale graph data. 
-    Won the internal hackathon with embeddings + generative AI to create per-segment optimized images and text for ads. 
-    }
-    \datedexperience{Globo Group}{06/2021 - 03/2023} 
-    \explanation{Senior Data Scientist - AdTech Squad - Big Data and Artificial Intelligence} 
+    Creating the best AI to estimate construction costs.
+
+        }\\
+    \datedexperience{ReelGood - Senior Machine Learning Engineer - San Franscisco (Remote)}{11/2023 - 03/2025} 
     \explanationdetail{ 
- Developed and implemented a real-time AI pipeline utilizing PyTorch, TensorFlow, Python, OpenCV, AWS, Cloud Run and Functions. Optimizing ad placement in over 50,000 videos, resulting in an annual increase of R\$10 million in ad revenue.
+
+    Responsible for a new version of the company core algorithm that matches movies, shows and shows episodes across 60+ streaming services in 8 languages, totaling more than 3 Million titles. Deployed it to AWS using Pytorch, ChromaDB, SBERT, Docker and AirFlow running on Kubernetes (EKS). The new solution improved upon the current one by 750x on performance, from 3s/title to 4ms/title with significantly better precision.
+    }\\
+    \datedexperience{Globo Group - Staff Machine Learning Engineer}{04/2023 - 11/2023} 
+    \explanationdetail{ 
+    Developed and deployed models and data pipelines to manage behavior graphs at a massive scale, serving a user base exceeding 100 million unique users. Using tech like Vertex AI, DataProc, DataFlow, and BigQuery on large-scale graphs. 
+    \\
+    
+      Won the internal hackathon with user embeddings + generative AI to generate segment-optimized creatives and text for ads.}\\
+    \datedexperience{Globo Group - Senior Data Scientist}{06/2021 - 03/2023} 
+    \explanationdetail{ 
+ Developed and deployed a real-time AI pipeline using PyTorch, TensorFlow, Python, OpenCV, AWS, Cloud Run and Functions which optimized ad placement in over 2k videos per day adding R\$10 million in revenue per year.
+\\
 
  Developed a contextual extractor and clustering algorithm for every article published at G1, GShow and GE to assess the CTR lift provided by different contexts for advertisers. Used PyTorch, Top2Vec, Cloud Functions and Vertex AI;
- 
+\\
+
  Applied genetic algorithms to automate advertising strategies in broadcast and cable TV. This initiative yielded a remarkable annual revenue generation of over R\$30 million.
 
- Created an doc synchronizer across documentation platforms severely reducing doc time with Go, Python and Tsuru;
- 
- Recognized as a finalist in the Internal Hackathon for presenting an innovative script-and-cast contextualized video thumbnailer. Utilized C++, OpenCV, and Python.
-}
-    \datedexperience{Boa Vista Serviços - Brazilian Credit Bureau}{08/2020 - 06/2021} 
-    \explanation{Data Scientist - Advanced Analytics Squad - Data Science Department} 
+ }\\
+    \datedexperience{Boa Vista Serviços - Data Scientist}{08/2020 - 06/2021} 
     \explanationdetail{ 
- Developed a faster ML pipeline reducing Data Scientists overhead from 2 weeks down to 3 hours using MLFlow and GCP;
  
  Created a model for propensity of credit card acceptance and activation which was sold to a top20 world bank.
-     }    
+ \\
+
+ Developed a faster ML pipeline reducing Data Scientists overhead from 2 weeks down to 3 hours using MLFlow and GCP;
+     }\\    
     %
-    \datedexperience{ArcelorMittal}{05/2019 - 07/2020} 
-    \explanation{Junior Data Scientist - Innovation in Marketing Squad} 
+    \datedexperience{ArcelorMittal - Junior Data Scientist}{05/2019 - 07/2020} 
     \explanationdetail{ 
     Saved R\$1.3 million yearly with automation, machine learning and data science using Python, R, Azure, SQL;
     
-    Created a sales forecasting project for over 100 points of sale all over Brazil. Worked on Customer Churn modelling and Demand of production prediction for factories;
+    Created a sales forecasting project for over 100 points of sale all over Brazil.
 
      }     
     %
   
 %Education
 \section{Education}
-    \datedexperience{USP - Polytechnic School of the University of São Paulo}{07/2021 - 12/2023} 
-    \explanation{Master of Science in Mechatronics Engineering} 
-    \explanationdetail{ 
-    Dissertation on Deep Reinforcement Learning for traffic control in large and complex cities}
     \datedexperience{USP - Polytechnic School of the University of São Paulo}{01/2020 - 12/2021} 
     \explanation{Artificial Intelligence Specialization} 
     \explanationdetail{ 
@@ -89,6 +92,9 @@ Highlight: \href{https://github.com/brunorosilva/plotly-calplot/tree/main}{Calpl
 %
 % Experience
 \section{Courses and Certificates}
+    \newcommand{\extraevelven}{%
+    \textbf{Data Science Dojo} - LLM Bootcamp working with RAG, LangChain, LangGraph, Vector DB (40 Hours) 
+    }
     \newcommand{\extraone}{%
     \textbf{Google} - Advanced Solutions Lab (16 weeks focused on several tools for ML in GCP w/ Google Experts) 
     }
@@ -105,18 +111,14 @@ Highlight: \href{https://github.com/brunorosilva/plotly-calplot/tree/main}{Calpl
     }
     \newcommand{\extrasix}{%
     \textbf{Alura} (13 courses) Courses on Linux, Shell, Docker, Kubernetes and Flutter    }
-\newcommand{\extraseven}{%
-\textbf{Udacity} (2 courses) Time Series Forecasting; Programming Foundations with Python }
     \newcommand{\extraeigth}{%
 \textbf{Coursera} (16 courses) Machine Learning, Andew Ng and other 15 courses in the specializations    }
     \newcommand{\extraten}{%
 \textbf{HarvardX} (3 courses) Data Science: Productivity Tools; Visualization; Machine Learning    }
-    \newcommand{\extraevelven}{%
-Several Programming Courses (40+ courses) - Certificates on \href{https://www.linkedin.com/in/brunorosilva/}{my linkedin}  }
     \newcommand{\extratwelve}{%
 Volunteered in Buenos Aires, Argentina: taking care of children who lived in a orphanage in the suburbs, AIESEC    }
 
-    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree,  \extrafive, \extrasix, \extraseven, \extraeigth, \extraten, \extraevelven, \extratwelve}
+    \newcommand{\listofextras}{\extraevelven, \extraone, \extratwo, \extrathree,  \extrafive, \extrasix, \extraeigth, \extraten, \extratwelve}
     %
     \createbullets{\listofextras}
 %
